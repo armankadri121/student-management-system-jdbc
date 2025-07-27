@@ -30,6 +30,7 @@ A **console-based student management system** built using **Java**, **JDBC**, an
 
 ## 🗂️ Project Structure
 
+```
 student-management-jdbc/
 ├── src/
 │ ├── Student.java
@@ -38,8 +39,9 @@ student-management-jdbc/
 ├── pom.xml
 └── README.md
 
-
 ---
+
+```
 
 ## 🧱 Database Schema
 
@@ -62,25 +64,24 @@ CREATE TABLE students (
 
 ---
 
-###1. Clone the repo
+1. Clone the repo
 git clone https://github.com/armankadri121/student-management-system-jdbc.git
 cd student-management-jdbc
 
-###2. Setup MySQL DB
+2. Setup MySQL DB
 Create the database and table using the schema above.
 
-###3. Update DB Credentials
+3. Update DB Credentials
 In StudentDAO.java, modify:
 
 String jdbc = "jdbc:mysql://localhost:3306/student_db";
 String username = "your_mysql_username";
 String password = "your_mysql_password";
 
-###4. Build and Run
+4. Build and Run
 Use your IDE or run with Maven:
 mvn compile
 mvn exec:java -Dexec.mainClass=Main
-
 
 
 ## 📷 Sample Output
@@ -93,8 +94,6 @@ Student Management Menu
 6. Search student by Name
 0. Exit
 Enter your choice:
-
-```
 
 
 
